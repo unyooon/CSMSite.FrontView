@@ -1,2 +1,2 @@
 # CSMSite.FrontView
-塾管理サイト
+塾管理サイトのフロント
