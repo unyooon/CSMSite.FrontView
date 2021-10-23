@@ -21,7 +21,8 @@
 		"dbaeumer.vscode-eslint",
 		"ms-vscode.vscode-typesctipt-tslint-plugin",
 		"octref.vetur",
-		"dariofuzinato.vue-peek"
+		"dariofuzinato.vue-peek",
+		"ionutvmi.path-autocomplete"
 	]
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
