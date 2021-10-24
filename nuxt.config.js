@@ -18,12 +18,16 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    { src: '~/assets/app.scss', lang: 'scss' }
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -31,7 +35,11 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    '~/components/layouts',
+    '~/components/pages',
+    '~/components/ui'
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -49,7 +57,8 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ['~/assets/vuetify.scss'],
+    treeShake: true,
     theme: {
       dark: true,
       themes: {
